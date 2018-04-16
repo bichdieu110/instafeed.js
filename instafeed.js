@@ -259,7 +259,7 @@
           if (!this.options.userId) {
             throw new Error("No user specified. Use the 'userId' option.");
           }
-          endpoint = "users/" + this.options.userId + "/media/recent";
+          endpoint = "users/self/media/recent";
           break;
         default:
           throw new Error("Invalid option for get: '" + this.options.get + "'.");
